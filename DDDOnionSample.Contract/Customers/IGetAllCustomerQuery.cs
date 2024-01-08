@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace DDDOnionSample.Contract.Customers
 {
-    public interface ICustomerRepository
+    public  interface  IGetAllCustomerQuery
     {
-        List<Customer> Customers();
-        Customer Find(int id);
-
+        List<Customer> Execute();
     }
 }

@@ -16,7 +16,7 @@ namespace DDDOnionSample.Entities.Orders
         private int _totalPrice { get; set; }
         public int OrderID { get; set; }
         public Good Good { get; set; }
-        public SaleMan SaleMan{ get; set; }
+        public Saleman SaleMan{ get; set; }
         public Customer customer{ get; set; }
         public int Quantity{
             get

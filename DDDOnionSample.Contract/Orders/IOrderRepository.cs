@@ -9,7 +9,7 @@ namespace DDDOnionSample.Contract.Orders
 {
     public interface IOrderRepository
     {
-        List<OrderDTO> Orders();
+        List<Order> Orders();
         Order Find(int id);
     }
 }

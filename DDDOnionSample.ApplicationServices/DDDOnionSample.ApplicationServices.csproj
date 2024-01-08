@@ -12,4 +12,8 @@
     <ProjectReference Include="..\DDDOnionSample.Services\DDDOnionSample.Services.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Customers\Command\" />
+  </ItemGroup>
+
 </Project>

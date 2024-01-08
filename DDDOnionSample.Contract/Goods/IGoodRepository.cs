@@ -9,7 +9,7 @@ namespace DDDOnionSample.Contract.Goods
 {
     public interface IGoodRepository
     {
-        List<GoodDTO> Goods();
+        List<Good> Goods();
         Good Find(int id);
     }
 }

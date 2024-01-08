@@ -25,13 +25,13 @@ namespace DDDOnionSample.Data.EF.Orders
             return null;
         }
 
-        public List<OrderDTO> Orders()
+        public List<Order> Orders()
         {
             var result = _ctx.Orders.ToList();
             if (result.Count > 0)
             {
-                var ResultDTO = _mapper.Map<List<OrderDTO>>(result);
-                return ResultDTO;
+                //var ResultDTO = _mapper.Map<List<OrderDTO>>(result);
+                return result;
             }
             return null;
         }

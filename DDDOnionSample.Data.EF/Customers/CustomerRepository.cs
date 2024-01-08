@@ -13,13 +13,13 @@ namespace DDDOnionSample.Data.EF.Customers
         {
         }
 
-        public List<CustomerDTO> Customers()
+        public List<Customer> Customers()
         {
             var result = _ctx.Customers.ToList();
             if (result.Count > 0)
             {
-                var ResultDTO = _mapper.Map<List<CustomerDTO>>(result);
-                return ResultDTO;
+                //var ResultDTO = _mapper.Map<List<CustomerDTO>>(result);
+                return result;
             }
             return null;
         }

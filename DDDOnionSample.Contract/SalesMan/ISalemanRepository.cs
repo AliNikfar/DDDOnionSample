@@ -9,7 +9,7 @@ namespace DDDOnionSample.Contract.SalesMan
 {
     public interface ISalemanRepository
     {
-        List<SalemanDTO> Salemans();
+        List<Saleman> Salemans();
         Saleman Find(int id);
     }
 }

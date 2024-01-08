@@ -21,13 +21,13 @@ namespace DDDOnionSample.Data.EF.SalesMan
             return null;
         }
 
-        public List<SalemanDTO> Salemans()
+        public List<Saleman> Salemans()
         {
             var result = _ctx.Salemans.ToList();
             if (result.Count > 0)
             {
-                var ResultDTO = _mapper.Map<List<SalemanDTO>>(result);
-                return ResultDTO;
+                //var ResultDTO = _mapper.Map<List<Saleman>>(result);
+                return result;
             }
             return null;
 

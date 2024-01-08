@@ -25,13 +25,13 @@ namespace DDDOnionSample.Data.EF.Goods
             return null;
         }
 
-        public List<GoodDTO> Goods()
+        public List<Good> Goods()
         {
             var result = _ctx.Goods.ToList();
             if (result.Count > 0)
             {
-                var ResultDTO = _mapper.Map<List<GoodDTO>>(result);
-                return ResultDTO;
+                //var ResultDTO = _mapper.Map<List<GoodDTO>>(result);
+                return result;
             }
             return null;
         }
