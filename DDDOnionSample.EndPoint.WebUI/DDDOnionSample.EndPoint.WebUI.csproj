@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DDDOnionSample.ApplicationServices\DDDOnionSample.ApplicationServices.csproj" />
+    <ProjectReference Include="..\DDDOnionSample.Contract\DDDOnionSample.Contract.csproj" />
+    <ProjectReference Include="..\DDDOnionSample.Data.EF\DDDOnionSample.Data.EF.csproj" />
+    <ProjectReference Include="..\DDDOnionSample.Entities\DDDOnionSample.Entities.csproj" />
+    <ProjectReference Include="..\DDDOnionSample.Services\DDDOnionSample.Services.csproj" />
+  </ItemGroup>
+
+</Project>
